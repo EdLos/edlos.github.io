@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071727">
+  <meta name="description" content="Balkonertrag zeigt Ertrag, Ersparnis und Amortisation deines Balkonkraftwerks. Zählerstand eintragen, Entwicklung verfolgen und Anlage besser verstehen.">
+  <link rel="canonical" href="https://edlos.github.io/balkonertrag/">
+  <link rel="icon" type="image/png" href="./app-icon.png">
+  <title>Balkonertrag – Ertrag und Ersparnis deines Balkonkraftwerks</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #071727; color: #f6f9fc; line-height: 1.5; }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    header { border-bottom: 1px solid #ffffff26; }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; }
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .nav > a:last-child { color: #d2e0ea; font-size: 14px; text-decoration: none; }
+    main { padding: 80px 0 72px; }
+    .intro { display: grid; grid-template-columns: minmax(0, 1fr) 200px; align-items: center; gap: 64px; }
+    .eyebrow { color: #ffcc51; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    h1 { margin: 14px 0 18px; font-size: clamp(36px, 5vw, 60px); line-height: 1.1; max-width: 760px; }
+    .lead { max-width: 620px; color: #c5d3dc; font-size: 19px; }
+    .app-icon { width: 200px; aspect-ratio: 1; border-radius: 28px; box-shadow: 0 20px 50px #0008; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 30px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 20px; border-radius: 6px; background: #ffce54; color: #112334; font-weight: 700; text-decoration: none; }
+    .button:hover, .button:focus-visible { background: #ffe18c; }
+    .actions span { color: #abc0ca; font-size: 14px; }
+    .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 88px; border-top: 1px solid #ffffff26; padding-top: 38px; }
+    h2 { margin: 0 0 8px; font-size: 20px; }
+    .features p { margin: 0; color: #b9cbd5; }
+    .note { margin-top: 72px; padding: 26px 0; border-top: 1px solid #ffffff26; color: #b9cbd5; }
+    .note strong { color: #f6f9fc; }
+    footer { border-top: 1px solid #ffffff26; padding: 24px 0 32px; color: #a9bcc7; font-size: 14px; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    footer a:hover, .nav > a:last-child:hover { color: #fff; }
+    @media (max-width: 680px) {
+      main { padding-top: 46px; }
+      .intro { grid-template-columns: 1fr; gap: 28px; }
+      .app-icon { grid-row: 1; width: 104px; border-radius: 20px; }
+      .lead { font-size: 17px; }
+      .features { grid-template-columns: 1fr; gap: 28px; margin-top: 58px; }
+      .note { margin-top: 52px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap nav" aria-label="Hauptnavigation">
+      <a class="brand" href="./"><img src="./app-icon.png" alt="" width="36" height="36">Balkonertrag</a>
+      <a href="https://edlos.github.io/balkonertrag-privacy/">Datenschutz</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <div>
+        <div class="eyebrow">Balkonkraftwerk Ertragsrechner</div>
+        <h1 id="title">Was bringt dein Balkonkraftwerk wirklich?</h1>
+        <p class="lead">Balkonertrag macht aus deinen Zählerständen eine klare Antwort: Ertrag in kWh, Ersparnis in Euro und der Weg zur Amortisation. Ohne Herstellerkonto.</p>
+        <div class="actions">
+          <a class="button" href="https://apps.apple.com/de/app/balkonkraftwerk-ertragsrechner/id6808555813">Im App Store ansehen</a>
+          <span>Kostenlos starten · für iPhone und iPad</span>
+        </div>
+      </div>
+      <img class="app-icon" src="./app-icon.png" alt="Balkonertrag App-Icon mit Sonne und Solarpanels" width="200" height="200">
+    </section>
+    <section class="features" aria-label="Funktionen">
+      <div><h2>Einfach erfassen</h2><p>Zählerstand eintragen und die Entwicklung deiner Anlage verfolgen. Das funktioniert unabhängig vom Hersteller.</p></div>
+      <div><h2>Ertrag verstehen</h2><p>Sieh Monats- und Jahreswerte, geschätzte Stromkostenersparnis und den Fortschritt bis zur Amortisation.</p></div>
+      <div><h2>Gut entscheiden</h2><p>Vergleiche deine Erträge und prüfe mit deinen Werten, ob sich ein Batteriespeicher lohnen könnte.</p></div>
+    </section>
+    <p class="note"><strong>Deine Werte bleiben auf deinem Gerät.</strong> Die App benötigt kein Benutzerkonto. Berechnete Beträge sind Schätzungen auf Basis deiner Eingaben.</p>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>© EdLos</span>
+      <a href="https://edlos.github.io/balkonertrag-privacy/">Datenschutzerklärung</a>
+      <a href="mailto:vitality.adepts@gmail.com">Kontakt</a>
+    </div>
+  </footer>
+</body>
+</html>
